@@ -1,0 +1,65 @@
+html{
+    --bg : #F6F6F6;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    
+    
+}
+
+.header nav{
+    background-color: var(--bg);
+    width: 100%;
+    margin: auto;
+}
+
+.nav-links{
+    flex-direction: row;
+}
+.nav-links a {
+  display: flex;
+  margin-right: 50px;
+}
+.profile  {
+  height: 900px;
+}
+
+.profile img{
+    width: 100%;
+    height: auto;
+    filter: blur(0.7px);
+  -webkit-filter: blur(0.7px);
+  
+}
+
+#hello{
+
+    color: white;
+    font-size: 72px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    right: 10%;
+    bottom: 23%;
+    text-shadow: 1px 3px 2px darkblue;
+}
