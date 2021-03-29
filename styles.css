@@ -11,6 +11,32 @@ body{
     font-family: 'Poppins', sans-serif;
     
 }
+h2, h3{
+    color: #999999;
+    margin: 20px 0;
+    font-weight: bold;
+    
+}
+
+h2{
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+h3{
+    
+    font-size: 40px;
+    letter-spacing: -0.25px;
+}
+h4{
+    margin: 10px 0;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 6px;
+    color: #7E7C7C;
+    opacity: 0.6;
+}
 
 ul{
     list-style: none;
@@ -77,6 +103,7 @@ position: relative;
     letter-spacing: 8px;
     position: relative;
     top: -60px;
+    cursor: pointer;
 }
 
 .header__social{
@@ -86,4 +113,51 @@ position: relative;
     letter-spacing: 6px;
     justify-content: space-between;
     flex-direction: row;
+}
+
+.projects{
+    width: 90%;
+    margin: 80px auto auto;
+    /* margin: auto;
+    margin-top: 80px;*/
+}
+
+.project__img{
+    background-image: url('/assets/celina.jpeg');
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    background-color: #D8D8D8;
+    margin-bottom: 30px;
+}
+
+.about{
+    width: 90%;
+    margin:auto;
+}
+.about h3{
+    font-family: 'Dancing Script', cursive;    
+}
+.about img{
+    height: 80px;
+    width: 360px;
+    object-fit: cover;
+}
+
+.infocard{
+    background-color: #FFE8E8;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+footer{
+    /* font-family: 'VT323', monospace; */
+    background-color: #D8D8D8;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+
 }

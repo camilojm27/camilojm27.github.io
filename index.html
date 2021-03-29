@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> -->
     <title>Camilo Mezú</title>
 </head>
 
@@ -20,24 +22,77 @@
         <nav>
             <ul class="header__nav-links flex">
                 <li><a href="#">Work</a></li>
-                <li><a href="#">Project</a></li>
+                <li><a href="#">Projects</a></li>
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
         <figure class="header__profile">
             <img id="profile"
-                srcset="assets/profile.jpg, https://firebasestorage.googleapis.com/v0/b/celina-tienda.appspot.com/o/portafolio%2Fprofile.jpg?alt=media&token=916ed8dc-6474-4ca3-af4a-79ef89279edf"
+                srcset="https://firebasestorage.googleapis.com/v0/b/celina-tienda.appspot.com/o/portafolio%2Fprofile.jpg?alt=media&token=916ed8dc-6474-4ca3-af4a-79ef89279edf"
                 alt="" />
             <p id="hello">Hello <br> I'm Camilo<br> Mezú</p>
         </figure>
-        <button class="button">DOWNLOAD CV</button>
+        <button onclick="window.open('assets/CV.pdf')" class="button">DOWNLOAD CV</button>
         <div class="header__social flex">
             <span> TW. </span>
             <span> IN. </span>
             <span> FB. </span>
         </div>
-
     </header>
+
+    <main>
+        <section class="work"></section>
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project flex">
+                <a href="https://celina-tienda.web.app/" target="_blank" rel="noopener noreferrer">
+                    <h3> Celina | Tienda</h3>
+                </a>
+
+                <div class="project__img">
+
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, molestiae. Assumenda necessitatibus
+                    unde magnam sit commodi illo, natus incidunt veniam!</p>
+            </div>
+        </section>
+        <section class="about">
+            <h2>About</h2>
+            <img src="assets/bgplant.png" alt="">
+            <div class="infocard">
+                <h4>Email</h4>
+                <a href="mailto:camilo272001@gmail.com">camilo272001@gmail.com</a>
+                <h4>Role</h4>
+                <p>Junior Fullstack Developer</p>
+                <h4>Phone</h4>
+                <a href="https://t.me/camilojmm" target="_blank" rel="noopener noreferrer">(+57) 322 689 0290</a>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dicta autem vel natus rerum? Excepturi
+                accusamus deleniti sint voluptas autem cumque, vel veniam, voluptatum repellat recusandae commodi odit
+                iste qui natus, quaerat ea earum? Necessitatibus, vero? Quia provident excepturi hic labore vitae,
+                molestiae neque nobis pariatur voluptates quas possimus sunt! Maxime, sequi quasi accusantium sint
+                suscipit voluptas, placeat nulla perferendis neque architecto hic cumque expedita eius sapiente enim
+                aperiam porro excepturi est ratione obcaecati labore dolores. Dolores nemo, aut dolore maxime eaque
+                nobis repellendus amet? Nulla harum eos corrupti adipisci eum porro saepe, ipsa, culpa quam ipsum iusto
+                officiis explicabo.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dicta autem vel natus rerum? Excepturi
+                accusamus deleniti sint voluptas autem cumque, vel veniam, voluptatum repellat recusandae commodi odit
+                iste qui natus, quaerat ea earum? Necessitatibus, vero? Quia provident excepturi hic labore vitae,
+                molestiae neque nobis pariatur voluptates quas possimus sunt! Maxime, sequi quasi accusantium sint
+                suscipit voluptas, placeat nulla perferendis neque architecto hic cumque expedita eius sapiente enim
+                aperiam porro excepturi est ratione obcaecati labore dolores. Dolores nemo, aut dolore maxime eaque
+                nobis repellendus amet? Nulla harum eos corrupti adipisci eum porro saepe, ipsa, culpa quam ipsum iusto
+                officiis explicabo.</p>
+            <h3>Camilo J. Mezú Mina <br> 卡米洛</h3>
+        </section>
+    </main>
+    <footer>
+        <p>Made With 💛 Cali Colombia 🇨🇴 </p>
+        <p>Camilo Mezú Mina • 2021</p>
+        <a href="https://www.figma.com/community/file/883766363000361657/Portfolio-Template"><small>This web was based on the Figma Portafolio template of Pooja Sinha @pooja_px</small></a>
+    </footer>
+
 </body>
 
 </html>
