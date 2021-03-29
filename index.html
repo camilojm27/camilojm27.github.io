@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
     <!-- <link rel="stylesheet" href="normalize.css" /> -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -16,16 +18,25 @@
 <body>
     <header class="header flex">
         <nav>
-            <ul class="nav-links flex">
+            <ul class="header__nav-links flex">
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Project</a></li>
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
-        <figure class="profile">
-                <img id="profile" src="assets/profile.jpg" alt="" />
-                <p id="hello">Hello <br> I'm Camilo<br>  Mezú</p>
-            </figure>
+        <figure class="header__profile">
+            <img id="profile"
+                srcset="assets/profile.jpg, https://firebasestorage.googleapis.com/v0/b/celina-tienda.appspot.com/o/portafolio%2Fprofile.jpg?alt=media&token=916ed8dc-6474-4ca3-af4a-79ef89279edf"
+                alt="" />
+            <p id="hello">Hello <br> I'm Camilo<br> Mezú</p>
+        </figure>
+        <button class="button">DOWNLOAD CV</button>
+        <div class="header__social flex">
+            <span> TW. </span>
+            <span> IN. </span>
+            <span> FB. </span>
+        </div>
+
     </header>
 </body>
 
