@@ -1,0 +1,42 @@
+.header{
+    width: 80%;
+    margin: auto;
+    background-color: #F6F6F6;
+    align-items:  start;
+    justify-content: start;
+    flex-direction: row;
+}
+
+.header__social, .header button{
+    position: absolute;
+}
+
+.header button{
+    top: 60%;
+    left: 45%;
+
+}
+.header__social{
+    top: 60%;
+    left: 50px;
+    width: 25%;
+}
+nav{
+    display: flex;
+    background-color: chocolate;
+    padding: 10px;
+}
+.header__nav-links{
+    margin: 0 auto;
+}
+
+.header__profile{
+    width: 50%;
+    position: static;
+}
+#hello{
+    color: #999999;
+    top: 80px;
+    left: 50px;
+    text-shadow: none;
+}
