@@ -53,11 +53,16 @@ a{
     justify-content: center;
     align-items: center;
 }
-
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .header nav{
     background-color: var(--bg);
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .header__nav-links{
@@ -158,6 +163,5 @@ footer{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-
 
 }
