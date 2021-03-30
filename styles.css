@@ -20,7 +20,6 @@ h2, h3{
 
 h2{
     font-size: 60px;
-    text-decoration: underline;
 }
 
 h3{
@@ -122,9 +121,17 @@ position: relative;
 
 .projects{
     width: 90%;
-    margin: 80px auto auto;
+    margin: 80px auto 7rem;
     /* margin: auto;
     margin-top: 80px;*/
+    
+}
+
+.projects p{
+    color: #6D6D6D;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.4px;
 }
 
 .project__img{
