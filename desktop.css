@@ -47,16 +47,21 @@ nav{
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 50px;
     height: 70vh;
 }
 
-.project h3{
+.project a{
     grid-column: 2;
 
 }
-.project a{
+.project p{
     grid-column: 2;
+}
+
+.project ul{
+    list-style: inside;
 }
 
 .project__img{
@@ -68,12 +73,7 @@ nav{
    width: 70%;
    position: relative;
 }
-.about p{
-    color: #6D6D6D;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.4px;
-}
+
 
 .about img {
     height: 280px;
