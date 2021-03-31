@@ -127,7 +127,7 @@ position: relative;
     
 }
 
-.projects p{
+.projects p, ul, .about p{
     color: #6D6D6D;
     font-size: 18px;
     line-height: 36px;
@@ -135,7 +135,7 @@ position: relative;
 }
 
 .project__img{
-    background-image: url('/assets/celina.jpeg');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/camilo-mezu.appspot.com/o/portafolio%2Fcelina.jpeg?alt=media&token=ec03e90b-8ade-469f-9e26-0d8c1f99d2f7');
     background-size: cover;
     height: 300px;
     width: 300px;
@@ -152,7 +152,7 @@ position: relative;
 }
 .about img{
     height: 80px;
-    width: 360px;
+    width: 100%;
     object-fit: cover;
 }
 
