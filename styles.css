@@ -46,6 +46,14 @@ a{
     text-decoration: none;
     color: black;
 }
+a h3{
+    text-decoration: underline;
+    text-decoration-color: #f5bcbc;
+
+}
+a h3:hover{
+    color: peru;
+}
 .flex{
     display: flex;
     flex-direction: column;
