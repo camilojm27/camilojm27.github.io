@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Camilo Mezú Mina Blog</title>
+        <link>https://camilojm27.github.io/blog</link>
+        <description>Camilo Mezú Mina Blog</description>
+        <lastBuildDate>Fri, 30 Jun 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>es-co</language>
+        <item>
+            <title><![CDATA[Como instralar moodle]]></title>
+            <link>https://camilojm27.github.io/blog/como-instalar-moodle</link>
+            <guid>https://camilojm27.github.io/blog/como-instalar-moodle</guid>
+            <pubDate>Fri, 30 Jun 2023 00:00:00 GMT</pubDate>
+            <category>moodle</category>
+            <category>linux</category>
+        </item>
+    </channel>
+</rss>
