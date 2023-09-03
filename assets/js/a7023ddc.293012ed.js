@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcamilojm_27_github_io=self.webpackChunkcamilojm_27_github_io||[]).push([[713],{3457:l=>{l.exports=JSON.parse('[{"label":"moodle","permalink":"/blog/tags/moodle","count":1},{"label":"linux","permalink":"/blog/tags/linux","count":1}]')}}]);

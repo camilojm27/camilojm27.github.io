@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcamilojm_27_github_io=self.webpackChunkcamilojm_27_github_io||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Como instralar moodle","permalink":"/blog/como-instalar-moodle"}]}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcamilojm_27_github_io=self.webpackChunkcamilojm_27_github_io||[]).push([[203],{1152:l=>{l.exports=JSON.parse('{"label":"moodle","permalink":"/blog/tags/moodle","allTagsPath":"/blog/tags","count":1}')}}]);

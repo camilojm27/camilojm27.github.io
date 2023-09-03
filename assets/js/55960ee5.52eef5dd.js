@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcamilojm_27_github_io=self.webpackChunkcamilojm_27_github_io||[]).push([[121],{8070:a=>{a.exports=JSON.parse('[{"label":"sdfad","permalink":"/docs/tags/sdfad","count":1},{"label":"adf1","permalink":"/docs/tags/adf-1","count":1}]')}}]);
