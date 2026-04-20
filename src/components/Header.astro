@@ -1,0 +1,103 @@
+---
+import type { Lang } from '../i18n/translations';
+import { t } from '../i18n/translations';
+
+interface Props {
+	lang: Lang;
+	activePage?: 'home' | 'projects' | 'blog';
+}
+
+const { lang, activePage } = Astro.props;
+---
+
+<header class="site">
+	<div class="brand">Camilo Mezú Mina</div>
+	<nav class="primary">
+		<a href="/" class:list={[{ active: activePage === 'home' }]}>{t(lang, 'home')}</a>
+		<a href="/projects/" class:list={[{ active: activePage === 'projects' }]}>{t(lang, 'projects')}</a>
+		<a href="/blog/" class:list={[{ active: activePage === 'blog' }]}>{t(lang, 'blog')}</a>
+		<button id="lang-toggle" class="lang" aria-label="Toggle language">{t(lang, 'nav_lang')}</button>
+	</nav>
+</header>
+
+<style>
+	.site {
+		max-width: 640px;
+		margin: 0 auto;
+		padding: 48px 28px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		gap: 16px;
+		flex-wrap: wrap;
+		margin-bottom: 48px;
+	}
+	.brand {
+		font-weight: 600;
+		font-size: 1.05rem;
+		color: var(--ink);
+	}
+	.primary {
+		display: flex;
+		gap: 18px;
+		align-items: baseline;
+		font-size: 0.95rem;
+	}
+	.primary a {
+		text-decoration: none;
+		color: var(--ink-soft);
+	}
+	.primary a:hover { color: var(--accent); }
+	.primary a.active { color: var(--ink); font-weight: 600; }
+	.lang {
+		background: none;
+		border: 1px solid var(--rule);
+		color: var(--ink-soft);
+		padding: 3px 9px;
+		font: inherit;
+		font-size: 0.8rem;
+		letter-spacing: 0.04em;
+		cursor: pointer;
+		border-radius: 2px;
+	}
+	.lang:hover { border-color: var(--accent); color: var(--accent); }
+	@media (max-width: 520px) {
+		.site { padding: 32px 20px 0; margin-bottom: 32px; }
+	}
+</style>
+
+<script>
+	(function () {
+		const KEY = 'lang';
+		const supported = ['en', 'es'];
+
+		function getLang() {
+			const saved = localStorage.getItem(KEY);
+			if (saved && supported.includes(saved)) return saved;
+			const nav = (navigator.language || 'en').slice(0, 2);
+			return supported.includes(nav) ? nav : 'en';
+		}
+
+		function applyLang(lang) {
+			document.documentElement.lang = lang;
+			document.querySelectorAll('[data-en],[data-es]').forEach(el => {
+				const val = el.getAttribute('data-' + lang);
+				if (val !== null) el.textContent = val;
+			});
+			const btn = document.getElementById('lang-toggle');
+			if (btn) btn.textContent = lang === 'en' ? 'ES' : 'EN';
+		}
+
+		document.addEventListener('DOMContentLoaded', () => {
+			applyLang(getLang());
+			const btn = document.getElementById('lang-toggle');
+			if (btn) {
+				btn.addEventListener('click', () => {
+					const next = getLang() === 'en' ? 'es' : 'en';
+					localStorage.setItem(KEY, next);
+					applyLang(next);
+				});
+			}
+		});
+	})();
+</script>

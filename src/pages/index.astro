@@ -1,0 +1,101 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { GITHUB_URL, LINKEDIN_URL, EMAIL, SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { t } from '../i18n/translations';
+
+const lang = 'en';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+</head>
+<body>
+	<Header lang={lang} activePage="home" />
+
+	<main>
+		<h1 data-en={t('en','tagline')} data-es={t('es','tagline')}>{t(lang,'tagline')}</h1>
+
+		<p data-en={t('en','about_p1')} data-es={t('es','about_p1')}>{t(lang,'about_p1')}</p>
+		<p data-en={t('en','about_p2')} data-es={t('es','about_p2')}>{t(lang,'about_p2')}</p>
+		<p data-en={t('en','about_p3')} data-es={t('es','about_p3')}>{t(lang,'about_p3')}</p>
+
+		<h2 data-en={t('en','skills_heading')} data-es={t('es','skills_heading')}>{t(lang,'skills_heading')}</h2>
+		<ul class="plain">
+			<li>
+				<span data-en={t('en','skill_fullstack')} data-es={t('es','skill_fullstack')}>{t(lang,'skill_fullstack')}</span>
+				<span class="meta" data-en={t('en','skill_fullstack_meta')} data-es={t('es','skill_fullstack_meta')}>{t(lang,'skill_fullstack_meta')}</span>
+			</li>
+			<li>
+				<span data-en={t('en','skill_mobile')} data-es={t('es','skill_mobile')}>{t(lang,'skill_mobile')}</span>
+				<span class="meta" data-en={t('en','skill_mobile_meta')} data-es={t('es','skill_mobile_meta')}>{t(lang,'skill_mobile_meta')}</span>
+			</li>
+			<li>
+				<span data-en={t('en','skill_linux')} data-es={t('es','skill_linux')}>{t(lang,'skill_linux')}</span>
+				<span class="meta" data-en={t('en','skill_linux_meta')} data-es={t('es','skill_linux_meta')}>{t(lang,'skill_linux_meta')}</span>
+			</li>
+			<li>
+				<span data-en={t('en','skill_db')} data-es={t('es','skill_db')}>{t(lang,'skill_db')}</span>
+				<span class="meta" data-en={t('en','skill_db_meta')} data-es={t('es','skill_db_meta')}>{t(lang,'skill_db_meta')}</span>
+			</li>
+			<li>
+				<span data-en={t('en','skill_cloud')} data-es={t('es','skill_cloud')}>{t(lang,'skill_cloud')}</span>
+				<span class="meta" data-en={t('en','skill_cloud_meta')} data-es={t('es','skill_cloud_meta')}>{t(lang,'skill_cloud_meta')}</span>
+			</li>
+			<li>
+				<span data-en={t('en','skill_ui')} data-es={t('es','skill_ui')}>{t(lang,'skill_ui')}</span>
+				<span class="meta" data-en={t('en','skill_ui_meta')} data-es={t('es','skill_ui_meta')}>{t(lang,'skill_ui_meta')}</span>
+			</li>
+			<li>
+				<span data-en={t('en','skill_lead')} data-es={t('es','skill_lead')}>{t(lang,'skill_lead')}</span>
+				<span class="meta" data-en={t('en','skill_lead_meta')} data-es={t('es','skill_lead_meta')}>{t(lang,'skill_lead_meta')}</span>
+			</li>
+		</ul>
+
+		<h2 data-en={t('en','elsewhere_heading')} data-es={t('es','elsewhere_heading')}>{t(lang,'elsewhere_heading')}</h2>
+		<div class="links">
+			<a href={GITHUB_URL} target="_blank" rel="noopener">GitHub</a>
+			<a href={LINKEDIN_URL} target="_blank" rel="noopener">LinkedIn</a>
+			<a href={`mailto:${EMAIL}`}>Email</a>
+			<a href="/projects/" data-en={`${t('en','projects')} →`} data-es={`${t('es','projects')} →`}>{t(lang,'projects')} →</a>
+		</div>
+	</main>
+
+	<Footer lang={lang} />
+</body>
+</html>
+
+<style>
+	main {
+		max-width: 640px;
+		margin: 0 auto;
+		padding: 0 28px;
+	}
+	.plain {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 16px;
+	}
+	.plain li {
+		padding: 6px 0;
+		border-bottom: 1px dashed var(--rule);
+		display: flex;
+		justify-content: space-between;
+		gap: 16px;
+		flex-wrap: wrap;
+	}
+	.plain li:last-child { border-bottom: none; }
+	.meta { color: var(--ink-soft); font-size: 0.9rem; }
+	.links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 14px 20px;
+		margin: 20px 0 8px;
+	}
+	@media (max-width: 520px) {
+		main { padding: 0 20px; }
+	}
+</style>
