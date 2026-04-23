@@ -1,0 +1,81 @@
+export const translations = {
+	en: {
+		home: 'Home',
+		projects: 'Projects',
+		blog: 'Blog',
+		nav_lang: 'ES',
+		tagline: 'Software engineer based in Cali, Colombia.',
+		about_p1: "I build web and mobile products end-to-end — from shaping the idea and designing the interface, to writing the backend and shipping it to production. I care about simple, reliable software and the people who use it.",
+		about_p2: "Currently a full-stack developer at AdvizorPro (Atlanta). Previously I built a React Native app at ATD, maintained a university-wide Moodle platform on Oracle Linux, and went through Blanc Labs' Digital Academy. My undergraduate thesis was a Docker management platform written in Go.",
+		about_p3: "Outside of work I swim, tinker with Linux boxes (have done so since I was twelve), and occasionally write.",
+		skills_heading: 'What I do well',
+		elsewhere_heading: 'Elsewhere',
+		footer_made: 'made with care in Cali, CO',
+		// Skills table
+		skill_fullstack: 'Full-stack product development',
+		skill_fullstack_meta: 'frontend, backend, API design',
+		skill_mobile: 'Mobile apps',
+		skill_mobile_meta: 'design, build, ship to stores',
+		skill_linux: 'Linux & operations',
+		skill_linux_meta: 'terminal-native, comfortable in production',
+		skill_db: 'Database design',
+		skill_db_meta: 'relational & document stores',
+		skill_cloud: 'Cloud deployment',
+		skill_cloud_meta: 'AWS, Azure (AZ-900)',
+		skill_ui: 'Interface design',
+		skill_ui_meta: 'Figma, taste, restraint',
+		skill_lead: 'Leading small efforts',
+		skill_lead_meta: 'from idea to live product',
+		// Projects page
+		projects_heading: 'Selected projects',
+		projects_sub: "A few things I've built. I focus on the problem, the users, and the outcome — the stack is just a means to an end.",
+		back_home: '← Back home',
+		// Blog page
+		blog_heading: 'Blog',
+		blog_sub: 'Notes on software, systems, and things I find interesting.',
+		read_more: 'Read →',
+		// Post layout
+		back_to_blog: '← Back to blog',
+	},
+	es: {
+		home: 'Inicio',
+		projects: 'Proyectos',
+		blog: 'Blog',
+		nav_lang: 'EN',
+		tagline: 'Ingeniero de software en Cali, Colombia.',
+		about_p1: 'Construyo productos web y móviles de principio a fin — desde darle forma a la idea y diseñar la interfaz, hasta escribir el backend y llevarlo a producción. Me importa el software simple y confiable, y las personas que lo usan.',
+		about_p2: 'Actualmente desarrollador full-stack en AdvizorPro (Atlanta). Antes construí una app en React Native en ATD, mantuve la plataforma Moodle de mi universidad sobre Oracle Linux y pasé por Digital Academy en Blanc Labs. Mi tesis de pregrado fue una plataforma de gestión de Docker escrita en Go.',
+		about_p3: 'Fuera del trabajo nado, trasteo con servidores Linux (lo hago desde los doce años) y de vez en cuando escribo.',
+		skills_heading: 'Lo que hago bien',
+		elsewhere_heading: 'En otros lugares',
+		footer_made: 'hecho con cuidado en Cali, CO',
+		skill_fullstack: 'Desarrollo full-stack de producto',
+		skill_fullstack_meta: 'frontend, backend, diseño de API',
+		skill_mobile: 'Apps móviles',
+		skill_mobile_meta: 'diseño, desarrollo, publicación',
+		skill_linux: 'Linux y operaciones',
+		skill_linux_meta: 'nativo en terminal, cómodo en producción',
+		skill_db: 'Diseño de bases de datos',
+		skill_db_meta: 'relacionales y documentales',
+		skill_cloud: 'Despliegue en la nube',
+		skill_cloud_meta: 'AWS, Azure (AZ-900)',
+		skill_ui: 'Diseño de interfaces',
+		skill_ui_meta: 'Figma, criterio, sobriedad',
+		skill_lead: 'Liderar esfuerzos pequeños',
+		skill_lead_meta: 'de la idea al producto en vivo',
+		projects_heading: 'Proyectos seleccionados',
+		projects_sub: 'Algunas cosas que he construido. Me enfoco en el problema, los usuarios y el resultado — las tecnologías son solo un medio.',
+		back_home: '← Volver al inicio',
+		blog_heading: 'Blog',
+		blog_sub: 'Notas sobre software, sistemas y cosas que encuentro interesantes.',
+		read_more: 'Leer →',
+		back_to_blog: '← Volver al blog',
+	},
+} as const;
+
+export type Lang = keyof typeof translations;
+export type TranslationKey = keyof typeof translations['en'];
+
+export function t(lang: Lang, key: TranslationKey): string {
+	return translations[lang][key];
+}
